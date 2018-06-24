@@ -41,10 +41,10 @@ export default {
   },
   methods: {
     calcBarPosX () {
-      const barEle = this.$refs.ventActiveBar,
-        itemEle = this.$children[this.value].$el,
-        itemWidth = itemEle.offsetWidth,
-        barWidth = barEle.offsetWidth
+      const barEle = this.$refs.ventActiveBar
+      const itemEle = this.$children[this.value].$el
+      const itemWidth = itemEle.offsetWidth
+      const barWidth = barEle.offsetWidth
       this.barPosX = itemEle.offsetLeft + (itemWidth - barWidth) / 2
     }
   },
